@@ -1,8 +1,10 @@
 <h1>Sorting algorithms & Big O</h1>
 <img src="https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg" alt="Big O notation" width="100%" height="auto">
+
 ## Description
-- In computer science, a sorting algorithm is an algorithm that puts elements of a list into an order. The most frequently used orders are numerical order and lexicographical order, and either ascending or descending.
-- Big O Notation in Data Structure is used to express algorithmic complexity using algebraic terms. It describes the upper bound of an algorithm's runtime and calculates the time and amount of memory needed to execute the algorithm for aninput value.
+
+- <strong>Sorting Algorithm:</strong> In computer science, a sorting algorithm is an algorithm that puts elements of a list into an order. The most frequently used orders are numerical order and lexicographical order, and either ascending or descending.
+- <strong>Big O Notation:</strong> Big O Notation in Data Structure is used to express algorithmic complexity using algebraic terms. It describes the upper bound of an algorithm's runtime and calculates the time and amount of memory needed to execute the algorithm for aninput value.
 
 ## Requirements
 
@@ -20,3 +22,13 @@
 	_Don’t forget to push your header file_
 - All your header files should be include guarded
 - A list/array does not need to be sorted if its size is less than 2.
+- The following format is expected for big O notation:
+  * `O(1)`
+  * `O(n)`
+  * `O(n!)`
+  * n squared -> `O(n^2)`
+  * log(n) -> `O(log(n))`
+  * n * log(n) -> `O(nlog(n))`
+  * n + k -> `O(n+k)`
+
+Please use the "short" notation (don't use constants). Example: `O(nk)` or `O(wn)` should be written `O(n)`. If an answer is required within a file, all your answers files must have a newline at the end.
