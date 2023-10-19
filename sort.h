@@ -4,6 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/**
+ * swap - Swaps the values of two integer pointers.
+ * @ap: Pointer to the first integer.
+ * @bp: Pointer to the second integer.
+ */
+static inline void swap(int *ap, int *bp)
+{
+	int temp = *ap;
+	*ap = *bp;
+	*bp = temp;
+}
+
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -21,7 +35,6 @@ typedef struct listint_s
 /* Printing helper functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-void swap(int *ap, int *bp);
 
 /* Sorting algoritms */
 void bubble_sort(int *array, size_t size);

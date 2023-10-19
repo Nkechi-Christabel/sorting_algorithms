@@ -1,22 +1,10 @@
 #include "sort.h"
 
 /**
- * swap - Swaps the values of two integer pointers.
- * @ap: Pointer to the first integer.
- * @bp: Pointer to the second integer.
- */
-void swap(int *ap, int *bp)
-{
-	int temp = *ap;
-	*ap = *bp;
-	*bp = temp;
-}
-
-/**
  * bubble_sort - Sorts an array of integers in ascending order using the
  * Bubble sort algorithm.
- * @array: The array to sort.
- * @size: Length of the array.
+ * @array: The array of integers to sort.
+ * @size: Size or Length of the array.
  */
 void bubble_sort(int *array, size_t size)
 {
