@@ -38,7 +38,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * quicksort - Implementation of the Quick Sort algorithm
+ * quickSort - Implementation of the Quick Sort algorithm
  * @array: The array to be sorted
  * @low: The starting index
  * @high: The ending index
