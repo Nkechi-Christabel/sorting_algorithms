@@ -34,10 +34,7 @@ void counting_sort(int *array, size_t size)
 
 	sorted = malloc(sizeof(int) * size);
 	if (sorted == NULL)
-	{
-		free(count_arr);
 		return;
-	}
 	for (j = 0; j < size; j++)
 	{
 		sorted[count_arr[array[j] - 1]] = array[j];
