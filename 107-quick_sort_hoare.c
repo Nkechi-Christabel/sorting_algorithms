@@ -64,6 +64,5 @@ void quick_sort_hoare(int *array, size_t size)
 	if (array == NULL || size < 2)
 		return;
 
-	quicksort(array, 0, size - 1, size);
+	quickSort(array, 0, size - 1, size);
 }
-
