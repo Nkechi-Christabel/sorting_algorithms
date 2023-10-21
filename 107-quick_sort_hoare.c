@@ -10,9 +10,7 @@
  */
 int hoare_partition(int *array, int low, int high, size_t size)
 {
-	int pivot = array[low];
-	int i = low - 1;
-	int j = high + 1;
+	int pivot = array[high], i = low - 1, j = high + 1;
 
 	while (1)
 	{
@@ -23,14 +21,15 @@ int hoare_partition(int *array, int low, int high, size_t size)
 		do {
 			j--;
 		} while (array[j] > pivot);
+		
+		if (i == j)
+			return (j - 1);
 
-		if (i < j)
-		{
-			swap(&array[i], &array[j]);
-			print_array(array, size);
-		}
-		else
+		else if (i > j)
 			return (j);
+
+		swap(&array[i], &array[j]);
+		print_array(array, size);
 	}
 }
 
